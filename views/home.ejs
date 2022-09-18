@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<!-- https://codepen.io/billyysea/pen/DbQyQE? -->
+<link rel="stylesheet" href="css/home.css">
+  <input type="radio" checked id="toggle--login" name="toggle" class="ghost" />
+  <input type="radio" id="toggle--signup" name="toggle" class="ghost" />
+
+  <form class="form form--login framed" action="/login" method="POST">
+    <input name="username" type="email" placeholder="Email" class="input input--top" />
+    <input name="password" type="password" placeholder="Password" class="input" />
+    <input type="submit" value="Log in" class="input input--submit" />
+    
+    <label for="toggle--signup" class="text text--small text--centered">New? <b>Sign up</b></label>
+  </form>
+  
+  <form class="form form--signup framed" action="/register" method="POST">
+
+    <input name="username" type="email" placeholder="Email" class="input input--top" />
+    <input name="password" type="password" placeholder="Password" class="input" />
+    <input type="submit" value="Sign up" class="input input--submit" />
+    
+    <label for="toggle--login" class="text text--small text--centered">Not new? <b>Log in</b></label>
+  </form>
+  <div class="photo-cred">
+    <a class="text text--small" title="Check out their blog." href="http://cabinporn.com/post/125371354365/the-cabin-book-book-in-the-wild-21-in-the-us" target="_blank">Photo posted by <b>cabinporn</b></a>
+  </div>
+  <div class="fullscreen-bg"></div>
+
+<%- include('partials/footer') %>

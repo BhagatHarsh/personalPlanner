@@ -1,1 +1,1 @@
-# personalPlanner
+# Personal Planner
